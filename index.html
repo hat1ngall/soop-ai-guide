@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Пошаговый гайд по покупке подписки Soop AI в боте FastBuy и размещению предложения на FunPay.">
+  <title>Soop AI — от подписки до продажи</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./guide.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-brand" viewBox="0 0 24 24"><path d="M10 3.8h4.5a3.8 3.8 0 0 1 0 7.6h-5a4.5 4.5 0 0 0 0 9h5M5 15.7h13M8.5 7.6h5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 3 10l7 3 3 7 8-17ZM10 13l4-4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8ZM9 9V6a3 3 0 1 1 6 0v3"/></symbol>
+    <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.3"/><path d="M5 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-checkring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12 2.4 2.5 4.7-5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l1.7-3.1A7.5 7.5 0 1 1 20 11.5Z"/><path d="M9 11h6M9 14h4"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 4h12v16l-3-2-3 2-3-2-3 2V4ZM9 8h6M9 12h6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="nav container">
+      <a href="#top" class="brand" aria-label="Soop AI, к началу">
+        <span class="brand-mark"><svg class="icon"><use href="#i-brand"></use></svg></span>
+        <span>Soop AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Разделы">
+        <a href="#guide">Шаги</a>
+        <a href="#calculator">Расчёт</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+      <a class="button button-glass nav-cta" href="https://t.me/fastbuy_robot"><svg class="icon"><use href="#i-send"></use></svg> Открыть бота</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> Гайд по продаже подписки</p>
+        <h1 id="hero-heading">Купи подписку.<br><span>Выставь на FunPay.</span></h1>
+        <p class="hero-lede">Как подключить Soop AI через Telegram-бота FastBuy, оформить лот и посчитать, сколько останется с продажи.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#guide">Смотреть шаги</a>
+          <a class="button button-glass" href="https://t.me/fastbuy_robot"><svg class="icon"><use href="#i-send"></use></svg> Бот в Telegram</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-grid"></div>
+        <div class="art-halo"></div>
+        <div class="art-motion">
+          <div class="art-object"></div>
+          <div class="art-chip chip-fastbuy"><span><svg class="icon"><use href="#i-send"></use></svg></span><b>FastBuy</b></div>
+          <div class="art-chip chip-funpay"><span><svg class="icon"><use href="#i-bag"></use></svg></span><b>FunPay</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide section container" id="guide" aria-labelledby="guide-heading">
+      <header class="section-header reveal">
+        <h2 id="guide-heading">Как это работает</h2>
+        <p>От регистрации в Soop AI до своего лота на FunPay.</p>
+      </header>
+      <ol class="step-list reveal">
+        <li>
+          <details class="step" name="guide-steps" open>
+            <summary><span class="step-number">01</span><span class="step-title"><b>Создай аккаунт Soop AI</b><small>Регистрация</small></span><span class="step-toggle"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+            <div class="details-clip"><div class="step-body">
+              <div class="step-copy">
+                <p>Зарегистрируйся в Soop AI и войди в аккаунт. Для заявки понадобятся имя из профиля и email, который ты указал при регистрации.</p>
+                <a class="button button-glass" href="https://soop-ai-c5q5.onrender.com/register">Зарегистрироваться в Soop AI</a>
+              </div>
+              <div class="mini" aria-hidden="true">
+                <div class="mini-head"><span class="brand-mark"><svg class="icon"><use href="#i-brand"></use></svg></span> Soop AI</div>
+                <div class="mini-row"><span>Имя профиля</span><svg class="icon"><use href="#i-person"></use></svg></div>
+                <div class="mini-row"><span>Почта аккаунта</span><span class="mini-at">@</span></div>
+              </div>
+            </div></div>
+          </details>
+        </li>
+        <li>
+          <details class="step" name="guide-steps">
+            <summary><span class="step-number">02</span><span class="step-title"><b>Выбери тариф в FastBuy</b><small>Telegram-бот</small></span><span class="step-toggle"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+            <div class="details-clip"><div class="step-body">
+              <div class="step-copy">
+                <p>Открой <b>@fastbuy_robot</b>, нажми <b>Старт</b> и выбери <b>Soop AI</b>. Посмотри Boost и Enterprise, затем укажи имя и почту из профиля. Бот пришлёт номер заявки.</p>
+                <a class="button button-glass" href="https://t.me/fastbuy_robot"><svg class="icon"><use href="#i-send"></use></svg> Открыть FastBuy</a>
+              </div>
+              <div class="mini" aria-hidden="true">
+                <div class="mini-head"><span class="brand-mark"><svg class="icon"><use href="#i-send"></use></svg></span> FastBuy <span class="mini-tag">Soop AI</span></div>
+                <div class="mini-row"><span>Boost</span><span class="pale">Тариф</span></div>
+                <div class="mini-row mini-highlight"><span>Enterprise</span><span class="pale">Тариф</span></div>
+              </div>
+            </div></div>
+          </details>
+        </li>
+        <li>
+          <details class="step" name="guide-steps">
+            <summary><span class="step-number">03</span><span class="step-title"><b>Подключи подписку</b><small>Оплата и активация</small></span><span class="step-toggle"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+            <div class="details-clip"><div class="step-body">
+              <div class="step-copy">
+                <p>Дождись одобрения. Нажми «Написать менеджеру» в ответе бота, назови номер заявки и уточни оплату и подключение. Затем проверь тариф в профиле Soop AI.</p>
+              </div>
+              <div class="mini" aria-hidden="true">
+                <div class="mini-head"><span class="brand-mark"><svg class="icon"><use href="#i-checkring"></use></svg></span> Подключение</div>
+                <div class="mini-row"><span>Заявка</span><span class="pale">Принята</span></div>
+                <div class="mini-row"><span>Подписка</span><span class="pale">Проверь в профиле</span></div>
+              </div>
+            </div></div>
+          </details>
+        </li>
+        <li>
+          <details class="step" name="guide-steps">
+            <summary><span class="step-number">04</span><span class="step-title"><b>Оформи лот на FunPay</b><small>Размещение и выдача</small></span><span class="step-toggle"><svg class="icon"><use href="#i-plus"></use></svg></span></summary>
+            <div class="details-clip"><div class="step-body">
+              <div class="step-copy">
+                <p>Найди раздел, который подходит для подписки Soop AI. В лоте укажи сервис, тариф, срок и способ получения. Если у тебя есть код активации и раздел допускает автовыдачу, добавь код в товары для выдачи.</p>
+                <div class="step-actions"><a class="button button-glass" href="https://funpay.com/">Открыть FunPay</a><a class="text-link" href="https://funpay.com/trade/info">Правила FunPay</a></div>
+              </div>
+              <div class="mini" aria-hidden="true">
+                <div class="mini-head"><span class="brand-mark"><svg class="icon"><use href="#i-bag"></use></svg></span> Черновик лота</div>
+                <div class="mini-row"><span>Подписка Soop AI</span><span class="pale">Товар</span></div>
+                <div class="mini-row"><span>Enterprise</span><span class="pale">Тариф</span></div>
+              </div>
+            </div></div>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section calculator container" id="calculator" aria-labelledby="calculator-heading">
+      <div class="calc-card reveal">
+        <div class="calc-main">
+          <header class="section-header">
+            <h2 id="calculator-heading">Что останется с продажи?</h2>
+            <p>Подставь свои значения. Цифры ниже — пример для одной подписки.</p>
+          </header>
+          <div class="calc-inputs">
+            <label>Стоимость покупки<span class="input-shell"><input type="number" id="cost" min="0" max="1000000" step="0.01" inputmode="decimal" value="250"><span>₽</span></span></label>
+            <label>Цена продажи<span class="input-shell"><input type="number" id="price" min="0" max="1000000" step="0.01" inputmode="decimal" value="400"><span>₽</span></span></label>
+            <label>Комиссия<span class="input-shell"><input type="number" id="fee" min="0" max="100" step="0.01" inputmode="decimal" value="0"><span>%</span></span></label>
+          </div>
+          <p class="calc-note">Укажи процент, который удержат из цены продажи. При 0% расчёт показывает разницу до комиссии.</p>
+        </div>
+        <div class="calc-result">
+          <svg class="icon" aria-hidden="true"><use href="#i-receipt"></use></svg>
+          <p>Остаток с продажи</p>
+          <output id="margin" for="cost price fee" aria-live="polite">150 ₽</output>
+          <span id="calc-breakdown">400 ₽ − 250 ₽ − 0 ₽</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews container" id="reviews" aria-labelledby="reviews-heading">
+      <details class="reviews-details reveal">
+        <summary>
+          <span class="review-icon"><svg class="icon"><use href="#i-chat"></use></svg></span>
+          <h2 id="reviews-heading">Отзывы <span class="reviews-count" id="reviews-count"></span></h2>
+          <span class="review-label">Раскрыть</span>
+          <span class="review-label review-label-close">Свернуть</span>
+          <span class="step-toggle"><svg class="icon"><use href="#i-plus"></use></svg></span>
+        </summary>
+        <div class="details-clip"><div class="reviews-body">
+          <div class="reviews-toolbar">
+            <p>Сообщения из переписки и скриншоты операций.</p>
+            <div class="reviews-controls" aria-label="Листать скриншоты">
+              <button type="button" class="gallery-control gallery-back" id="gallery-back" aria-label="Листать назад" aria-controls="reviews-grid" disabled><svg class="icon"><use href="#i-chevron"></use></svg></button>
+              <button type="button" class="gallery-control" id="gallery-next" aria-label="Листать дальше" aria-controls="reviews-grid"><svg class="icon"><use href="#i-chevron"></use></svg></button>
+            </div>
+          </div>
+          <div class="reviews-grid" id="reviews-grid" role="group" aria-label="Скриншоты"></div>
+        </div></div>
+      </details>
+    </section>
+
+    <section class="container outro reveal" aria-labelledby="outro-heading">
+      <div><h2 id="outro-heading">Начни с FastBuy.</h2><p>В боте выбери категорию Soop AI.</p></div>
+      <a class="button button-primary" href="https://t.me/fastbuy_robot"><svg class="icon"><use href="#i-send"></use></svg> Открыть бота</a>
+    </section>
+  </main>
+  <footer class="container footer">
+    <a href="#top" class="brand"><span class="brand-mark"><svg class="icon"><use href="#i-brand"></use></svg></span> Soop AI</a>
+    <a class="text-link" href="https://t.me/fastbuy_robot">@fastbuy_robot</a>
+  </footer>
+  <dialog id="review-viewer" aria-labelledby="review-title">
+    <button type="button" class="dialog-close" aria-label="Закрыть отзыв"><svg class="icon"><use href="#i-close"></use></svg></button>
+    <div class="review-stage"><img alt=""></div>
+    <div class="review-viewer-footer">
+      <button type="button" class="gallery-control gallery-back" id="review-back" aria-label="Предыдущий скриншот"><svg class="icon"><use href="#i-chevron"></use></svg></button>
+      <div class="review-indicator" aria-live="polite"><p id="review-title"></p><span id="review-position"></span></div>
+      <button type="button" class="gallery-control" id="review-next" aria-label="Следующий скриншот"><svg class="icon"><use href="#i-chevron"></use></svg></button>
+    </div>
+  </dialog>
+  <script type="application/json" id="review-data">
+  [
+    {"image":"./assets/reviews/07.webp","title":"О советах в гайде","alt":"Сообщение о работе по гайду и скриншот пополнения","focus":"top"},
+    {"image":"./assets/reviews/12.webp","title":"О простоте гайда","alt":"Скриншот банковского приложения и сообщения о том, что гайд оказался понятным","focus":"bottom"},
+    {"image":"./assets/reviews/02.webp","title":"О работе и поддержке","alt":"Сообщение с благодарностью за поддержку и скриншот пополнения","focus":"top"},
+    {"image":"./assets/reviews/01.webp","title":"О скорости оплаты","alt":"Скриншот перевода и сообщение о поступлении","focus":"bottom"},
+    {"image":"./assets/reviews/10.webp","title":"О работе по гайду","alt":"Скриншот банковского приложения и сообщение о работе по гайду","focus":"bottom"},
+    {"image":"./assets/reviews/05.webp","title":"Сообщение о выводе","alt":"Скриншот банковского приложения и сообщения из переписки","focus":"bottom"},
+    {"image":"./assets/reviews/03.webp","title":"Переписка и перевод","alt":"Скриншот поступления в Crypto Bot и сообщение из переписки","focus":"bottom"},
+    {"image":"./assets/reviews/06.webp","title":"Ответ о поступлении","alt":"Переписка о поступлении средств и скриншот Crypto Bot","focus":"top"},
+    {"image":"./assets/reviews/04.webp","title":"Реакция в переписке","alt":"Скриншот банковского приложения и сообщения из чата","focus":"center"},
+    {"image":"./assets/reviews/09.webp","title":"Сообщения и перевод","alt":"Сообщения из чата и скриншот банковского перевода","focus":"top"},
+    {"image":"./assets/reviews/13.webp","title":"Сообщения из чата","alt":"Скриншот банковского приложения и сообщения автора","focus":"bottom"},
+    {"image":"./assets/reviews/08.webp","title":"Скриншот операции от 19.11","alt":"Экран поступления средств в Crypto Bot от 19 ноября","focus":"31%"},
+    {"image":"./assets/reviews/11.webp","title":"Скриншот операции от 20.11","alt":"Экран поступления средств в Crypto Bot от 20 ноября","focus":"31%"}
+  ]
+  </script>
+</body>
+</html>
